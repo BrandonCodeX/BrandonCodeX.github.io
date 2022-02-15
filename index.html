@@ -26,13 +26,21 @@
             line-height:2em;
             text-shadow:1px 2px 2px #1e3f25;
         }
-        body {
-       background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Libya_4608_Idehan_Ubari_Dunes_Luca_Galuzzi_2007.jpg/1920px-Libya_4608_Idehan_Ubari_Dunes_Luca_Galuzzi_2007.jpg");
-       display: block;
-       background-attachment: fixed;
-       background-color: rgb(189, 189, 189);
-       
-        }
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Libya_4608_Idehan_Ubari_Dunes_Luca_Galuzzi_2007.jpg/1920px-Libya_4608_Idehan_Ubari_Dunes_Luca_Galuzzi_2007.jpg") no-repeat center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+}
         .items-bring {
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.5em;
